@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="net.sf.simpletest.eclipse.launcher.stlaunchconfig">
+<stringAttribute key="net.sf.simpletest.eclipse.PROJECT_ATTR" value="MyFirstPHP"/>
+<stringAttribute key="PhpFile" value="C:\wamp\www\myphp\MyFirstPHP\phptest.php"/>
+</launchConfiguration>

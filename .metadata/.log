@@ -1,0 +1,782 @@
+!SESSION 2014-07-26 14:58:35.778 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-07-26 14:59:12.634
+!MESSAGE Warnings while parsing the view contributions from the 'org.eclipse.ui.viewActions' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction4'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-26 14:59:12.635
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction4'
+
+!ENTRY org.eclipse.ui.intro 4 0 2014-07-26 15:00:41.193
+!MESSAGE Intro tried accessing a NULL bundle.
+
+!ENTRY org.eclipse.ui.intro 4 0 2014-07-26 15:00:43.024
+!MESSAGE Intro tried accessing a NULL bundle.
+
+!ENTRY org.eclipse.ui.intro 4 0 2014-07-26 15:00:46.049
+!MESSAGE Intro tried accessing a NULL bundle.
+
+!ENTRY org.eclipse.osgi 4 0 2014-07-26 15:01:34.008
+!MESSAGE While loading class "net.sourceforge.phpeclipse.PHPeclipsePlugin$3$1", thread "Worker-1" timed out waiting (5000ms) for thread "main" to finish starting bundle "net.sourceforge.phpeclipse". To avoid deadlock, thread "Worker-1" is proceeding but "net.sourceforge.phpeclipse.PHPeclipsePlugin$3$1" may not be fully initialized.
+!STACK 0
+java.lang.Exception: Generated exception.
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:77)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	at net.sourceforge.phpeclipse.PHPeclipsePlugin$3.run(PHPeclipsePlugin.java:1182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2014-07-26 15:01:58.621
+!MESSAGE No subversion client interface found.
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: No subversion client interface found.
+	at org.tigris.subversion.svnclientadapter.SVNClientAdapterFactory.getPreferredSVNClientType(SVNClientAdapterFactory.java:86)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:59)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.getSvnClientInterface(SVNClientManager.java:97)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.createSVNClient(SVNClientManager.java:114)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.createSVNClient(SVNProviderPlugin.java:415)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.osgi 4 0 2014-07-26 15:01:58.624
+!MESSAGE An error occurred while automatically activating bundle org.tigris.subversion.subclipse.ui (250).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.tigris.subversion.subclipse.ui.SVNUIPlugin.start() of bundle org.tigris.subversion.subclipse.ui.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:1010)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: java.lang.NullPointerException
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	... 35 more
+Root exception:
+java.lang.NullPointerException
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.equinox.registry 4 1 2014-07-26 15:01:58.626
+!MESSAGE Plug-in org.tigris.subversion.subclipse.ui was unable to load class org.tigris.subversion.subclipse.ui.decorator.SVNLightweightDecorator.
+!STACK 0
+java.lang.ClassNotFoundException: org.tigris.subversion.subclipse.ui.decorator.SVNLightweightDecorator
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:402)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.ui 4 4 2014-07-26 15:05:09.084
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+
+!ENTRY org.eclipse.ui 4 4 2014-07-26 15:11:32.085
+!MESSAGE Invalid Menu Extension (Path is invalid): net.sf.eclipsetidy.NatureObjectAction
+!SESSION 2014-07-27 05:55:09.047 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-07-27 05:55:20.754
+!MESSAGE Warnings while parsing the view contributions from the 'org.eclipse.ui.viewActions' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction4'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.755
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.756
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 05:55:20.756
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction4'
+!SESSION 2014-08-09 09:43:33.924 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Warnings while parsing the view contributions from the 'org.eclipse.ui.viewActions' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewResourceNavigator/eclipseutilplugins.ResourceAction4'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.851
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction1'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.852
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.852
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction3'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-08-09 09:43:41.852
+!MESSAGE Actions require a non-empty label or definitionId: plug-in='ru.nlmk.eclipseutilplugins', id='AUTOGEN:::eclipseutilplugins.viewPackageExplorer/eclipseutilplugins.PackageAction4'
+
+!ENTRY org.eclipse.osgi 4 0 2014-08-09 14:49:22.789
+!MESSAGE An error occurred while automatically activating bundle net.sf.simpletest.eclipse (14).
+!STACK 0
+org.osgi.framework.BundleException: The activator net.sf.simpletest.eclipse.SimpletestPlugin for bundle net.sf.simpletest.eclipse is invalid
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:141)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:962)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfigurationType.getDelegate(LaunchConfigurationType.java:173)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getDelegate(LaunchConfiguration.java:330)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:573)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:136)
+	... 26 more
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.SWT.error(SWT.java:3268)
+	at org.eclipse.swt.widgets.Display.error(Display.java:978)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:638)
+	at org.eclipse.swt.widgets.Display.getSystemColor(Display.java:1931)
+	at net.sf.simpletest.eclipse.SimpletestPlugin.<clinit>(SimpletestPlugin.java:64)
+	... 33 more
+Root exception:
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadBundleActivator(AbstractBundle.java:136)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:962)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfigurationType.getDelegate(LaunchConfigurationType.java:173)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getDelegate(LaunchConfiguration.java:330)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:573)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.SWT.error(SWT.java:3268)
+	at org.eclipse.swt.widgets.Display.error(Display.java:978)
+	at org.eclipse.swt.widgets.Display.checkDevice(Display.java:638)
+	at org.eclipse.swt.widgets.Display.getSystemColor(Display.java:1931)
+	at net.sf.simpletest.eclipse.SimpletestPlugin.<clinit>(SimpletestPlugin.java:64)
+	... 33 more
+
+!ENTRY org.eclipse.equinox.registry 4 1 2014-08-09 14:49:22.850
+!MESSAGE Plug-in net.sf.simpletest.eclipse was unable to load class net.sf.simpletest.eclipse.launcher.SimpletestLaunchConfigurationDelegate.
+!STACK 0
+java.lang.ClassNotFoundException: net.sf.simpletest.eclipse.launcher.SimpletestLaunchConfigurationDelegate
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:402)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.debug.internal.core.LaunchConfigurationType.getDelegate(LaunchConfigurationType.java:173)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getDelegate(LaunchConfiguration.java:330)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:573)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 15:35:12.089
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:467)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 15:35:12.091
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:468)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 15:47:16.554
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:467)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 15:47:16.557
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:468)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 16:15:26.054
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:467)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY net.sourceforge.phpeclipse 4 4 2014-08-09 16:15:26.057
+!MESSAGE PHPeclipsePlugin.internalErrorOccurred
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1072)
+	at org.eclipse.jface.text.TreeLineTracker.lineOfOffset(TreeLineTracker.java:290)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1154)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:841)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedOffset.setOffset(PHPUnitEditor.java:589)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor$RememberedSelection.remember(PHPUnitEditor.java:468)
+	at net.sourceforge.phpeclipse.phpeditor.PHPUnitEditor.rememberSelection(PHPUnitEditor.java:2482)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$4.run(AbstractTextEditor.java:337)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.execute(AbstractTextEditor.java:486)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ElementStateListener.elementContentAboutToBeReplaced(AbstractTextEditor.java:341)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$FileBufferListener.bufferContentAboutToBeReplaced(TextFileDocumentProvider.java:253)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager$4.run(TextFileBufferManager.java:452)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.fireBufferContentAboutToBeReplaced(TextFileBufferManager.java:450)
+	at org.eclipse.core.internal.filebuffers.JavaTextFileBuffer.revert(JavaTextFileBuffer.java:262)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$6.execute(TextFileDocumentProvider.java:1200)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider$DocumentProviderOperation.run(TextFileDocumentProvider.java:144)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:101)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:113)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:73)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:63)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:460)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1213)
+	at org.eclipse.ui.editors.text.ForwardingDocumentProvider.synchronize(ForwardingDocumentProvider.java:301)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1215)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:3511)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:203)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:3635)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:3613)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:856)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.access$0(AbstractTextEditor.java:849)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$10.run(AbstractTextEditor.java:876)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
