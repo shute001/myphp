@@ -4,47 +4,11 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
- <?php
-$expire=time()+60*60*24*30;
-setcookie("user", "Alex Porter", $expire);
-?>
-<?php
-session_start();
-if(isset($_SESSION['veiws']))
-$_SESSION['views']++;
-else
-$_SESSION['views']=1;
-echo "<br>";
-echo "Views=" . $_SESSION['views'];
-echo "<br>";
-?>
-
-<?php
-//error handler function
-function customError($errno, $errstr, $errfile, $errline)
-{
-echo "<b>Error:</b> [$errno] $errstr" . " in line [$errline]";
-}
-
-//set error handler
-set_error_handler("customError");
-
-//trigger error
-echo($test);
-echo "<br>";
-$triger = 2;
-if($triger > 1)
-{
-	trigger_error("you have trig the error!");
-}
-?>
-
  <html>
 <head>
   <title>PHP Test</title>
 </head>
 <body>
-
 <?php
 echo "<p>Hello World</p>";
 echo $_SERVER["HTTP_USER_AGENT"];
@@ -142,25 +106,11 @@ echo "该文件位于'", __DIR__,"'目录下";
 echo "<br>";
 echo date("Y-m-d");
 echo "<br>";
-$tomorrow = mktime(0,0,0,date("m"),date("d")+1,date("Y"));
-echo "tomorrow is ",date("Y-m-d",$tomorrow);
-echo "<br>";
 ?>
 </body>
 </html>
 <?php
 echo "这是第", __line__,"行";
 echo "<br>";
-// Print a cookie
-if (isset($_COOKIE["user"]))
-{
-	echo "Welcome " . $_COOKIE["user"];
-	echo "<br>";
-	// A way to view all cookies
-	print_r($_COOKIE);
-}
-else
-echo "Welcome guest!<br>";
-
 ?>
 

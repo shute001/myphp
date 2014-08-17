@@ -21,17 +21,16 @@ echo "<br>";
 
 <?php
 //error handler function
-function customError($errno, $errstr, $errfile, $errline)
+function customError($errno, $errstr)
 {
-echo "<b>Error:</b> [$errno] $errstr" . " in line [$errline]";
+echo "<b>Error:</b> [$errno] $errstr";
 }
 
 //set error handler
-set_error_handler("customError");
+//set_error_handler("customError");
 
 //trigger error
 echo($test);
-echo "<br>";
 $triger = 2;
 if($triger > 1)
 {

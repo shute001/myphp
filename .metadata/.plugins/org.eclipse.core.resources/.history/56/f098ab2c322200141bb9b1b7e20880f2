@@ -21,7 +21,7 @@ echo "<br>";
 
 <?php
 //error handler function
-function customError($errno, $errstr, $errfile, $errline)
+function customError($errno, $errstr, $errline)
 {
 echo "<b>Error:</b> [$errno] $errstr" . " in line [$errline]";
 }

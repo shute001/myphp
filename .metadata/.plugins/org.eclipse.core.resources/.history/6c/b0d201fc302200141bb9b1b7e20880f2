@@ -21,9 +21,9 @@ echo "<br>";
 
 <?php
 //error handler function
-function customError($errno, $errstr, $errfile, $errline)
+function customError($errno, $errstr)
 {
-echo "<b>Error:</b> [$errno] $errstr" . " in line [$errline]";
+echo "<b>Error:</b> [$errno] $errstr";
 }
 
 //set error handler
@@ -31,12 +31,6 @@ set_error_handler("customError");
 
 //trigger error
 echo($test);
-echo "<br>";
-$triger = 2;
-if($triger > 1)
-{
-	trigger_error("you have trig the error!");
-}
 ?>
 
  <html>
@@ -44,7 +38,6 @@ if($triger > 1)
   <title>PHP Test</title>
 </head>
 <body>
-
 <?php
 echo "<p>Hello World</p>";
 echo $_SERVER["HTTP_USER_AGENT"];

@@ -16,35 +16,12 @@ else
 $_SESSION['views']=1;
 echo "<br>";
 echo "Views=" . $_SESSION['views'];
-echo "<br>";
 ?>
-
-<?php
-//error handler function
-function customError($errno, $errstr, $errfile, $errline)
-{
-echo "<b>Error:</b> [$errno] $errstr" . " in line [$errline]";
-}
-
-//set error handler
-set_error_handler("customError");
-
-//trigger error
-echo($test);
-echo "<br>";
-$triger = 2;
-if($triger > 1)
-{
-	trigger_error("you have trig the error!");
-}
-?>
-
  <html>
 <head>
   <title>PHP Test</title>
 </head>
 <body>
-
 <?php
 echo "<p>Hello World</p>";
 echo $_SERVER["HTTP_USER_AGENT"];
